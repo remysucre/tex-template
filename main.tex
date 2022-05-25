@@ -1,0 +1,92 @@
+\documentclass[acmsmall,screen,review,anonymous]{acmart}
+% \citestyle{acmauthoryear} 
+
+\author{Yisu Remy Wang}
+\affiliation{
+  \institution{University of Washington}
+ \country{USA}
+}
+\email{remywang@cs.washington.edu}
+
+% \usepackage[inline]{enumitem}
+% \usepackage{caption}
+% \usepackage{subcaption}
+% \usepackage{stmaryrd}
+
+% \usepackage{graphicx}
+% \graphicspath{ {./figures/} }
+
+% \usepackage{syntax}
+
+% \usepackage[colorinlistoftodos]{todonotes}
+
+% \usepackage{hyperref}
+% \def\algorithmautorefname{Algorithm}
+% \def\sectionautorefname{Section}
+% \def\subsectionautorefname{Section}
+% \def\subsubsectionautorefname{Section}
+
+% \usepackage{listings} % requires pygment syntax highlighting
+
+% \lstset{
+%   basicstyle=\ttfamily,
+% }
+% \lstset{
+%   columns=flexible,
+%   mathescape=true,
+%   keepspaces=true,
+%   showstringspaces=false,
+%   stringstyle=\slshape\color{green!40!black},
+%   basicstyle=\ttfamily\small,
+%   language=Prolog,
+%   morekeywords={*, self},
+%   commentstyle=\slshape\color{black!60},
+%   tabsize=2,
+% }
+
+\input{macros}
+
+% \usepackage[capitalize,nameinlink]{cleveref}
+
+% \def\drawplusplus#1#2#3{\hbox to 0pt{\hbox to #1{\hfill\vrule height #3 depth
+%       0pt width #2\hfill\vrule height #3 depth 0pt width #2\hfill
+%       }}\vbox to #3{\vfill\hrule height #2 depth 0pt width
+%       #1 \vfill}}
+%       %Poor man's typography
+% \def\concat{\mathrel{\drawplusplus {12pt}{0.4pt}{5pt}}}
+%       %It would be better to specify these in font-relative measures, but it
+%       %probably doesn't scale anyway.
+
+\newcommand{\rw}[1]{\todo[inline,color=yellow]{\textsf{#1} \hfill \textsc{--Remy}}}
+% \newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\title{P=NP}
+
+\begin{abstract}
+  \input{tex/00-abstract}
+\end{abstract}
+
+\keywords{}
+
+\maketitle
+
+\input{tex/01-intro}
+% \input{tex/model.tex}
+% \input{background}
+% \input{algorithm}
+% \input{optimizations}
+% \input{eval}
+% \input{discussion}
+% \input{relatedworks}
+% \input{conclusion}
+
+\begin{acks}
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
+\endinput
